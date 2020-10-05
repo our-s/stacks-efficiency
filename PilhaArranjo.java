@@ -59,10 +59,15 @@ public class PilhaArranjo {
 	
 	public static void main(String[] args) {
 		try {
-			String dirArqLog = "C:\\Users\\PC\\Desktop\\EP3\\log.txt";			// Insira aqui o caminho do arquivo que recebera o log
-			String dirArqTempo = "C:\\Users\\PC\\Desktop\\EP3\\tempo.csv";		// Insira aqui o caminho do arquivo que recebera o tempo de processamento
-			String dirPastaEntradas = "C:\\Users\\PC\\Desktop\\EP3\\Entrada";	// Insira aqui o caminho da pasta que contem os arquivos de entrada
-			
+			String dirArqLog = "C:\\Users\\PC\\Desktop\\EP3\\log_PilhaArranjo.txt";			// Insira aqui o caminho do arquivo que recebera o log
+			//String dirArqLog = "/Users/stacks-efficiency/log_PilhaArranjo.txt";
+
+			String dirArqTempo = "C:\\Users\\PC\\Desktop\\EP3\\tempo_PilhaArranjo.csv";		// Insira aqui o caminho do arquivo que recebera o tempo de processamento
+			//String dirArqTempo = "/Users/stacks-efficiency/tempo_PilhaArranjo.csv";
+
+			String dirPastaEntradas = "C:\\Users\\PC\\Desktop\\EP3\\entradas";	// Insira aqui o caminho da pasta que contem os arquivos de entrada
+			//String dirPastaEntradas = "/Users/stacks-efficiency/entradas";
+
 			BufferedWriter log = escritor(dirArqLog);
 			BufferedWriter tempo = escritor(dirArqTempo);
 			tempo.write("Nome do Arquivo;Tempo de Processamento(ms);Quantidade de Linhas"); // Cabecalho do arquivo dos tempos de processamento
@@ -82,6 +87,8 @@ public class PilhaArranjo {
 				log.newLine();
 				
 				leitor = leitor(dirPastaEntradas + "\\" + contents[i]);
+				//leitor = leitor(dirPastaEntradas + "/" + contents[i]);
+
 				str = leitor.readLine();
 				int qntLinhas = 0;
 				long t = System.currentTimeMillis();
