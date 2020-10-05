@@ -60,10 +60,10 @@ public class PilhaArranjo {
 	public static void main(String[] args) {
 		try {
 			String dirArqLog = "C:\\Users\\PC\\Desktop\\EP3\\log_PilhaArranjo.txt";			// Insira aqui o caminho do arquivo que recebera o log
-			//String dirArqLog = "/Users/stacks-efficiency/log_PilhaArranjo.txt";
+			//String dirArqLog = "/Users/stacks-efficiency/saidas/log_PilhaArranjo.txt";
 
 			String dirArqTempo = "C:\\Users\\PC\\Desktop\\EP3\\tempo_PilhaArranjo.csv";		// Insira aqui o caminho do arquivo que recebera o tempo de processamento
-			//String dirArqTempo = "/Users/stacks-efficiency/tempo_PilhaArranjo.csv";
+			//String dirArqTempo = "/Users/stacks-efficiency/saidas/tempo_PilhaArranjo.csv";
 
 			String dirPastaEntradas = "C:\\Users\\PC\\Desktop\\EP3\\entradas";	// Insira aqui o caminho da pasta que contem os arquivos de entrada
 			//String dirPastaEntradas = "/Users/stacks-efficiency/entradas";
